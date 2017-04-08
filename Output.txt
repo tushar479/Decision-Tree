@@ -1,0 +1,151 @@
+
+The Target Attribute is: breast
+
+Decision Tree:
+
+If breast-quad is left_low ,Then 
+---If tumor-siz is 30-34 then, breast is left
+---If tumor-siz is 20-24 ,Then 
+-------If deg-malig is 2 then, breast is left
+---If deg-malig is 1 ,Then 
+-------If age is 60-69 then, breast is left
+---If age is 50-59 ,Then 
+-------If menopause is premeno then, breast is left
+-------If menopause is ge40 then, breast is right
+-------If menopause is lt40 then, breast is left
+-------If age is 40-49 then, breast is right
+---If deg-malig is 3 ,Then 
+-------If node-caps is no then, breast is right
+-------If node-caps is yes then, breast is left
+---If tumor-siz is 15-19 ,Then 
+-------If age is 60-69 then, breast is left
+-------If age is 40-49 then, breast is left
+---If age is 50-59 ,Then 
+---If menopause is premeno ,Then 
+---If deg-malig is 2 ,Then 
+-------If Class is no-recurrence-events then, breast is right
+-------If Class is recurrence-events then, breast is left
+-------If deg-malig is 1 then, breast is left
+-------If menopause is lt40 then, breast is left
+---If age is 30-39 ,Then 
+-------If node-caps is no then, breast is right
+-------If node-caps is yes then, breast is left
+-------If age is 70-79 then, breast is left
+---If tumor-siz is 25-29 ,Then 
+---If age is 50-59 ,Then 
+---If menopause is premeno ,Then 
+---If node-caps is no ,Then 
+-------If deg-malig is 2 then, breast is left
+-------If deg-malig is 3 then, breast is right
+-------If node-caps is yes then, breast is left
+-------If menopause is ge40 then, breast is left
+---If age is 30-39 ,Then 
+-------If node-caps is no then, breast is right
+-------If node-caps is yes then, breast is left
+-------If age is 60-69 then, breast is left
+---If age is 40-49 ,Then 
+-------If Class is no-recurrence-events then, breast is right
+---If Class is recurrence-events ,Then 
+---If tumor-siz is 25-29 ,Then 
+---If tumor-siz is 25-29 ,Then 
+---If tumor-siz is 25-29 ,Then 
+------If tumor-siz is 25-29 then, breast is right
+---If tumor-siz is 50-54 ,Then 
+-------If Class is no-recurrence-events then, breast is left
+-------If Class is recurrence-events then, breast is right
+---If tumor-siz is 40-44 ,Then 
+-------If age is 50-59 then, breast is left
+---If age is 40-49 ,Then 
+-------If deg-malig is 2 then, breast is right
+-------If deg-malig is 1 then, breast is left
+-------If age is 60-69 then, breast is right
+---If tumor-siz is 10-14 then, breast is left
+---If tumor-siz is 0-4 then, breast is left
+---If tumor-siz is 35-39 then, breast is left
+If breast-quad is right_up ,Then 
+---If tumor-siz is 20-24 then, breast is right
+---If tumor-siz is 10-14 then, breast is left
+---If tumor-siz is 25-29 ,Then 
+-------If inv-nodes is 0-2 then, breast is left
+-------If inv-nodes is 3-5 then, breast is right
+---If tumor-siz is 30-34 ,Then 
+---If inv-nodes is 0-2 ,Then 
+---If age is 50-59 ,Then 
+-------If menopause is ge40 then, breast is right
+-------If menopause is premeno then, breast is left
+-------If age is 40-49 then, breast is right
+-------If age is 60-69 then, breast is right
+-------If inv-nodes is 3-5 then, breast is left
+---If tumor-siz is 50-54 then, breast is right
+---If tumor-siz is 40-44 then, breast is right
+---If tumor-siz is 5-9 then, breast is right
+---If tumor-siz is 35-39 then, breast is right
+---If tumor-siz is 45-49 then, breast is right
+If breast-quad is left_up ,Then 
+---If inv-nodes is 0-2 ,Then 
+---If tumor-siz is 15-19 ,Then 
+-------If menopause is ge40 then, breast is right
+---If menopause is premeno ,Then 
+-------If node-caps is no then, breast is left
+-------If node-caps is yes then, breast is right
+---If tumor-siz is 20-24 ,Then 
+-------If age is 40-49 then, breast is right
+-------If age is 70-79 then, breast is left
+-------If age is 50-59 then, breast is left
+---If tumor-siz is 30-34 ,Then 
+-------If Class is no-recurrence-events then, breast is left
+-------If Class is recurrence-events then, breast is right
+---If tumor-siz is 40-44 ,Then 
+-------If menopause is premeno then, breast is left
+-------If menopause is ge40 then, breast is right
+-------If tumor-siz is 35-39 then, breast is right
+---If tumor-siz is 25-29 ,Then 
+-------If age is 40-49 then, breast is left
+---If age is 60-69 ,Then 
+-------If Class is no-recurrence-events then, breast is right
+-------If Class is recurrence-events then, breast is left
+-------If age is 50-59 then, breast is right
+---If tumor-siz is 10-14 ,Then 
+---If deg-malig is 1 ,Then 
+---If menopause is ge40 ,Then 
+---If tumor-siz is 10-14 ,Then 
+---If tumor-siz is 10-14 ,Then 
+------If tumor-siz is 10-14 then, breast is right
+-------If menopause is premeno then, breast is right
+-------If deg-malig is 2 then, breast is left
+-------If tumor-siz is 50-54 then, breast is right
+---If inv-nodes is 9-11 then, breast is right
+---If inv-nodes is 3-5 then, breast is right
+---If inv-nodes is 12-14 then, breast is left
+---If inv-nodes is 6-8 ,Then 
+-------If tumor-siz is 30-34 then, breast is right
+-------If tumor-siz is 10-14 then, breast is left
+If breast-quad is right_low ,Then 
+---If tumor-siz is 0-4 then, breast is right
+---If tumor-siz is 20-24 then, breast is left
+---If tumor-siz is 10-14 then, breast is right
+---If tumor-siz is 25-29 ,Then 
+---If deg-malig is 1 ,Then 
+---If tumor-siz is 25-29 ,Then 
+---If tumor-siz is 25-29 ,Then 
+---If tumor-siz is 25-29 ,Then 
+---If tumor-siz is 25-29 ,Then 
+------If tumor-siz is 25-29 then, breast is right
+-------If deg-malig is 3 then, breast is left
+---If tumor-siz is 30-34 then, breast is left
+If breast-quad is central ,Then 
+---If age is 40-49 then, breast is left
+---If age is 50-59 ,Then 
+---If tumor-siz is 0-4 ,Then 
+-------If deg-malig is 2 then, breast is left
+-------If deg-malig is 1 then, breast is right
+-------If tumor-siz is 15-19 then, breast is right
+-------If tumor-siz is 20-24 then, breast is right
+---If age is 60-69 ,Then 
+-------If deg-malig is 1 then, breast is left
+-------If deg-malig is 3 then, breast is right
+-------If deg-malig is 2 then, breast is left
+---If age is 30-39 then, breast is right
+
+If breast-quad is ? then, breast is left
+
